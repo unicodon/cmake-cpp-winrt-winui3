@@ -4,6 +4,8 @@ target_link_libraries(
   WindowsAppSDK
 )
 target_include_directories(DemoApp PRIVATE "${CMAKE_CURRENT_BINARY_DIR}/include")
+target_include_directories(DemoApp PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/include")
+target_link_directories(DemoApp PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/lib")
 set_target_properties(
   DemoApp
   PROPERTIES
